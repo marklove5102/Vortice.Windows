@@ -1,56 +1,42 @@
-```
 # Build artifacts
 build/
 dist/
+*.o
+*.obj
+*.out
 
 # Dependencies
-node_modules/
-.venv/
 venv/
+.venv/
 __pycache__/
-*.egg-info/
+*.pyc
+*.pyo
+*.pyd
 
-# IDE files
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Logs and temporary files
-*.log
-*.tmp
-*.temp
+# System
+.DS_Store
+Thumbs.db
 
-# Environment variables
+# Logs
+*.log
+
+# Environment
 .env
 .env.local
 *.env.*
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Compiled files
-*.pyc
-*.class
-*.o
-*.obj
-*.dll
-*.so
-*.a
-*.exe
-*.out
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Testing
-.mypy_cache/
-.pytest_cache/
-
-# Package managers
-.gradle/
-target/
-```
+# Archives and compressed files (excluding .git itself)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+!/.git/**
