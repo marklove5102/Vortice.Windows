@@ -30,3 +30,13 @@ Thumbs.db
 .env
 .env.local
 *.env.*
+
+# Archives and compressed files (excluding .git itself)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+!/.git/**
