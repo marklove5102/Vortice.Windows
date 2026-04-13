@@ -1,42 +1,44 @@
-# Build artifacts
-build/
-dist/
-*.o
+```
+# Build artifacts and compiled files
 *.obj
-*.out
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.so
+*.dylib
+*.a
 
-# Dependencies
-venv/
-.venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Dependencies and packages
+packages/
+bin/
+obj/
+Debug/
+Release/
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System
-.DS_Store
-Thumbs.db
+# Temp files
+*.tmp
+*.temp
+*.bak
 
 # Logs
 *.log
 
-# Environment
-.env
-.env.local
-*.env.*
+# IDE files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.csproj.user
 
-# Archives and compressed files (excluding .git itself)
-*.zip
-*.tar
-*.tar.gz
-*.rar
-*.7z
-*.bz2
-*.xz
-!/.git/**
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuration
+app.config
+packages.config
+```
