@@ -1,4 +1,8 @@
 ```
-cpp_output_full/
-cpp_output_v2/
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Direct3D9 headers (assuming generated/external)
+cpp_output_test/include/Vortice/Direct3D9/
 ```

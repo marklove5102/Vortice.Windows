@@ -776,7 +776,8 @@ class CSharpToCppFullConverter:
         
         # Find all class/struct/interface definitions
         classes = []
-        pattern = r'(public|internal|private)?\s*(?:abstract\s+)?(class|struct|interface)\s+(\w+)(?:\s*:\s*([^{]+))?'
+        # Support partial, static, abstract modifiers
+        pattern = r'(public|internal|private)?\s*(?:static\s+)?(?:partial\s+)?(?:abstract\s+)?(class|struct|interface)\s+(\w+)(?:\s*:\s*([^{]+))?'
         
         for match in re.finditer(pattern, content):
             class_info = self.parse_class(content, match)

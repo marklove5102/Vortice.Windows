@@ -1,0 +1,43 @@
+// Copyright (c) Amer Koleci and Contributors.
+// Licensed under the MIT License (MIT). See LICENSE in the repository root for more information.
+
+#ifndef VORTICE_DIRECT3D11_UNORDEREDACCESSVIEWDESCRIPTION_H
+#define VORTICE_DIRECT3D11_UNORDEREDACCESSVIEWDESCRIPTION_H
+
+#include <cstdint>
+#include <vector>
+#include <string>
+#include <memory>
+#include <span>
+#include <unordered_map>
+
+namespace Vortice {
+
+// Copyright (c) Amer Koleci and Contributors.
+// Licensed under the MIT License (MIT). See LICENSE in the repository root for more information.
+
+#ifndef VORTICE_VORTICE_UNORDEREDACCESSVIEWDESCRIPTION_H
+#define VORTICE_VORTICE_UNORDEREDACCESSVIEWDESCRIPTION_H
+
+#include <cstdint>
+
+namespace Vortice {
+
+struct UnorderedAccessViewDescription
+{
+public:
+    constexpr UnorderedAccessViewDescription(ID3D11Buffer buffer, Format format, uint32_t 0, uint32_t 0, BufferUnorderedAccessViewFlags BufferUnorderedAccessViewFlags.None)
+    Format = format;
+        ViewDimension = UnorderedAccessViewDimension.Buffer;
+        Buffer.FirstElement = firstElement;
+        Buffer.NumElements = numElements;
+        Buffer.Flags = flags;
+};
+
+} // namespace Vortice
+
+#endif // VORTICE_VORTICE_UNORDEREDACCESSVIEWDESCRIPTION_H
+
+} // namespace Vortice
+
+#endif // VORTICE_DIRECT3D11_UNORDEREDACCESSVIEWDESCRIPTION_H
