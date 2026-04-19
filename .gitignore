@@ -1,42 +1,23 @@
-# Build artifacts
-build/
-dist/
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
 *.out
-
 # Dependencies
-venv/
 .venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System
-.DS_Store
-Thumbs.db
-
-# Logs
+venv/
+node_modules/
+# Logs and temp files
 *.log
-
+*.tmp
+*.swp
 # Environment
 .env
 .env.local
-*.env.*
-
-# Archives and compressed files (excluding .git itself)
-*.zip
-*.tar
-*.tar.gz
-*.rar
-*.7z
-*.bz2
-*.xz
-!/.git/**
+.env.*
+# Editors
+.vscode/
+.idea__/
+```
