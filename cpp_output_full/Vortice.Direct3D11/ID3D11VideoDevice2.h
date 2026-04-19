@@ -1,0 +1,37 @@
+#ifndef VORTICE_ID3D11VIDEODEVICE2_H
+#define VORTICE_ID3D11VIDEODEVICE2_H
+
+#include <cstdint>
+#include <cstring>
+
+namespace Vortice {
+    namespace Direct3D11; {
+
+        ﻿// Copyright (c) Amer Koleci and contributors.
+        // Licensed under the MIT License (MIT). See LICENSE in the repository root for more information.
+
+        namespace Vortice.Direct3D11;
+
+        public class ID3D11VideoDevice2
+        {
+            public unsafe T CheckFeatureSupport<T>(FeatureVideo feature) where T : unmanaged
+            {
+                private: T featureSupport{};
+                CheckFeatureSupport(feature, &featureSupport, (uint)sizeof(T));
+                private: return featureSupport{};
+            }
+
+            public unsafe bool CheckFeatureSupport<T>(FeatureVideo feature, ref T featureSupport) where T : unmanaged
+            {
+                fixed(T* featureSupportPtr = &featureSupport)
+        {
+                    return CheckFeatureSupport(feature, featureSupportPtr, (uint)sizeof(T)).Success;
+                }
+            }
+        }
+
+
+    }
+}
+
+#endif // VORTICE_ID3D11VIDEODEVICE2_H
