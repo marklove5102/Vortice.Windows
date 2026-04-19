@@ -1,37 +1,4 @@
 ```
-# Build artifacts and generated files
-cpp_output/
-
-# Python compiled files
-*.pyc
-__pycache__/
-
-# Logs
-*.log
-
-# Environment files
-.env
-.env.local
-*.env.*
-
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# Dependencies (if any Python virtual envs are present)
-.venv/
-venv/
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Distribution and build directories
-dist/
-build/
-target/
+cpp_output_full/
+cpp_output_v2/
 ```
