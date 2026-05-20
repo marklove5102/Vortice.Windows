@@ -1,0 +1,39 @@
+// Copyright (c) Contributors.
+
+#ifndef VORTICE_DREDAUTOBREADCRUMBSOUTPUT1_H
+#define VORTICE_DREDAUTOBREADCRUMBSOUTPUT1_H
+
+#include <cstdint>
+#include <optional>
+
+namespace Vortice {
+namespace Direct3D12 {
+
+        ﻿// Copyright (c) Amer Koleci and Contributors.
+        // Licensed under the MIT License (MIT). See LICENSE in the repository root for more information.
+        namespace Vortice.Direct3D12;
+        publicclass DredAutoBreadcrumbsOutput1
+        {
+            public: std::optional<AutoBreadcrumbNode1> m_headAutoBreadcrumbNode{};
+            internal struct __Native
+        {
+                public AutoBreadcrumbNode1.__Native* pHeadAutoBreadcrumbNode;
+            }
+            internalvoid __MarshalFree(__Native& @ref)
+                {
+                HeadAutoBreadcrumbNode?.__MarshalFree(@ref.pHeadAutoBreadcrumbNode);
+            }
+            internalvoid __MarshalFrom(__Native& @ref)
+                {
+                HeadAutoBreadcrumbNode?.__MarshalFrom(@ref.pHeadAutoBreadcrumbNode);
+            }
+            internalvoid __MarshalTo(__Native& @ref)
+                {
+                HeadAutoBreadcrumbNode?.__MarshalTo(@ref.pHeadAutoBreadcrumbNode);
+            }
+        }
+
+    }
+}
+
+#endif // VORTICE_DREDAUTOBREADCRUMBSOUTPUT1_H
